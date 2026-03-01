@@ -1,24 +1,24 @@
 package examen_Febrero3;
 
 class Episodio {
-    // 1. Atributos
+    // 1. Attributes
     private String titulo;
-    private int duracion; // en minutos
+    private int duracion; // in minutes
 
-    // 2. Constructores
-    // Constructor vacío
+    // 2. Constructors
+    // Empty Constructor
     public Episodio() {
-        this.titulo = "Sin título";
+        this.titulo = "No title";
         this.duracion = 0;
     }
 
-    // Constructor parametrizado
+    // Parameterized Constructor
     public Episodio(String titulo, int duracion) {
         this.titulo = titulo;
         this.duracion = duracion;
     }
 
-    // Getter para la duración (necesario para cálculos en Serie)
+    // Getter for duration (needed for calculations in Serie)
     public int getDuracion() {
         return duracion;
     }
@@ -27,9 +27,9 @@ class Episodio {
         return titulo;
     }
 
-    // 3. Métodos
+    // 3. Methods
     @Override
     public String toString() {
-        return "   -> Episodio: " + titulo + " (" + duracion + " min)";
+        return "   -> Episode: " + titulo + " (" + duracion + " min)";
     }
 }
